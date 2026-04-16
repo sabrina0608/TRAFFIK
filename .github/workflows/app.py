@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 # Model va encoderni yuklash
-model = pickle.load(open("model(2).pkl", "rb"))
+model(2) = pickle.load(open("model(2).pkl", "rb"))
 le_sit = pickle.load(open("encoder.pkl", "rb"))
 
 st.set_page_config(page_title="Trafik Bashorati", page_icon="🚦")
