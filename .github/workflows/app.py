@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 # Model va encoderni yuklash
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("model(2).pkl", "rb"))
 le_sit = pickle.load(open("encoder.pkl", "rb"))
 
 st.set_page_config(page_title="Trafik Bashorati", page_icon="🚦")
@@ -27,7 +27,7 @@ truck = st.number_input("Yuk mashinalari soni", 0, 100, 5)
 
 if st.button("🔍 Bashorat qilish"):
     input_data = np.array([[hour, date, day_map[day], car, bike, bus, truck]])
-    prediction = model.predict(input_data)
+    prediction = model(2).predict(input_data)
     result = le_sit.inverse_transform(prediction)[0]
     
     st.success(f"🚦 Yo'ldagi holat: **{result}**")
