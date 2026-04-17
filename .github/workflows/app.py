@@ -38,7 +38,7 @@ model = load_model()
 
 # 3. Sarlavha va Muallif
 st.markdown("<h1 class='main-title'>🚦 Professional AI Bashorat Tizimi</h1>", unsafe_allow_html=True)
-st.markdown("<p class='author-info'>Dastur egasi: Sayfiddinova Sabrina — Samarqand davlat universiteti</p>", unsafe_allow_html=True)
+st.markdown("<p class='author-info'>Dastur egasi: To`xtamurodova Sabrina — Samarqand davlat universiteti</p>", unsafe_allow_html=True)
 
 # 4. Sidebar: Ma'lumotlarni kiritish (7 ta xususiyat)
 st.sidebar.header("📊 Kiruvchi parametrlar")
